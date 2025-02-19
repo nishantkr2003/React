@@ -1,3 +1,21 @@
 h1 {
-  font-size: 450px;
+  font-size: 45px;
+  background-color: aqua;
+  margin: 10px;
+  margin-bottom: 20px;
+  color: azure;
+}
+
+input {
+  width: 100%;
+}
+
+.items-container {
+  text-align: left;
+}
+.kg-button {
+  min-width: 80px;
+}
+.kg-row {
+  margin: 7px 5px;
 }
