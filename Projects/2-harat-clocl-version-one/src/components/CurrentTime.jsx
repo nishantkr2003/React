@@ -2,7 +2,7 @@ let CurrentTime = () => {
   const time = new Date();
 
   return (
-    <p>
+    <p className="lead">
       This is the current time: {time.toLocaleDateString()} -{" "}
       {time.toLocaleTimeString()}
     </p>
