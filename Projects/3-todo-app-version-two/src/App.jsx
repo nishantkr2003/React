@@ -1,9 +1,7 @@
 import AppName from "./components/AppName";
 import AddTodo from "./components/AddTodo";
-
-import "./App.css";
-import TodoItem from "./components/TodoItem";
 import TodoItems from "./components/TodoItems";
+import "./App.css";
 
 function App() {
   const todoItems = [
@@ -12,8 +10,12 @@ function App() {
       dueDate: "4/10/2023",
     },
     {
-      name: "Go to college",
+      name: "Go to College",
       dueDate: "4/10/2023",
+    },
+    {
+      name: "Like this video",
+      dueDate: "right now",
     },
   ];
 
@@ -21,7 +23,7 @@ function App() {
     <center className="todo-container">
       <AppName />
       <AddTodo />
-      <TodoItems></TodoItems>
+      <TodoItems todoItems={todoItems}></TodoItems>
     </center>
   );
 }
