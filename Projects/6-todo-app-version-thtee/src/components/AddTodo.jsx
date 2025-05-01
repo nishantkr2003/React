@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { IoMdAdd } from "react-icons/io";
+import { MdDeleteForever } from "react-icons/md";
 
 function AddTodo({ onNewItem }) {
-  const [todoName, setTodoName] = useState("");
-  const [dueDate, setDueDate] = useState("");
+  const [todoName, setTodoName] = useState();
+  const [dueDate, setDueDate] = useState();
 
   const handleNameChange = (event) => {
     setTodoName(event.target.value);
@@ -14,8 +16,8 @@ function AddTodo({ onNewItem }) {
 
   const handleAddButtonClicked = () => {
     onNewItem(todoName, dueDate);
-    setTodoName("");
     setDueDate("");
+    setTodoName("");
   };
 
   return (
@@ -38,7 +40,7 @@ function AddTodo({ onNewItem }) {
             className="btn btn-success kg-button"
             onClick={handleAddButtonClicked}
           >
-            Add
+            <IoMdAdd />
           </button>
         </div>
       </div>
